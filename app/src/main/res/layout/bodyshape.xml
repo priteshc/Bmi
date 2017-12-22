@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmiback"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate body shape"
+        android:textSize="20dp"
+        android:id="@+id/reg"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="3%"
+
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Waist size(in):"
+        android:textSize="20dp"
+        android:id="@+id/name"
+        app:layout_widthPercent="38%"
+        app:layout_marginTopPercent="9%"
+        app:layout_marginLeftPercent="7%"
+        android:layout_below="@+id/reg"
+        />
+
+
+
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/weight"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="8%"
+        android:textSize="18dp"
+        android:hint="waist"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_marginTopPercent="7%"
+        android:background="@drawable/editborder"
+        app:layout_marginLeftPercent="10%"
+        android:layout_below="@+id/reg"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hips size(in):"
+        android:textSize="20dp"
+        android:id="@+id/height1"
+        app:layout_widthPercent="35%"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="7%"
+        android:layout_below="@+id/weight"
+        />
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/height"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="8%"
+        android:textSize="18dp"
+        android:hint="hips"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="@drawable/editborder"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="10%"
+        android:layout_below="@+id/weight"
+        />
+
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_marginTopPercent="10%"
+        android:layout_below="@+id/height1"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonborder"
+        android:id="@+id/calcult"
+        android:textSize="18dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="55%"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/txt"
+        android:layout_below="@+id/calcult"
+        app:layout_marginTopPercent="4%"
+        android:layout_centerInParent="true"
+        app:layout_marginLeftPercent="3%"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/txt1"
+        android:layout_below="@+id/txt"
+        app:layout_marginTopPercent="2%"
+        android:layout_centerInParent="true"
+        app:layout_marginLeftPercent="3%"
+
+        />
+
+
+</android.support.percent.PercentRelativeLayout>

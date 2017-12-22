@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmiback"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/border"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Mass Index"
+            android:layout_gravity="center"
+            android:textSize="23dp"
+            android:id="@+id/toolbar_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your current weight"
+        android:textSize="20dp"
+        android:id="@+id/reg"
+        android:layout_below="@+id/toolbar"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="3%"
+
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Weight:"
+        android:textSize="20dp"
+        android:id="@+id/name"
+        app:layout_widthPercent="30%"
+        app:layout_marginTopPercent="9%"
+        app:layout_marginLeftPercent="7%"
+        android:layout_below="@+id/reg"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/weight"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="8%"
+        android:textSize="18dp"
+        android:hint="weight"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_marginTopPercent="7%"
+        android:background="@drawable/editborder"
+        app:layout_marginLeftPercent="10%"
+        android:layout_below="@+id/reg"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="kgs"
+        android:textSize="20dp"
+        android:id="@+id/label"
+        app:layout_widthPercent="20%"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="1%"
+        android:layout_below="@+id/reg"
+        android:layout_toRightOf="@+id/weight"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textSize="20dp"
+        android:id="@+id/height1"
+        app:layout_widthPercent="30%"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="7%"
+        android:layout_below="@+id/weight"
+        />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/height"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="8%"
+        android:textSize="18dp"
+        android:hint="date"
+        android:gravity="center"
+        android:background="@drawable/editborder"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="10%"
+        android:layout_below="@+id/weight"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textSize="20dp"
+        android:id="@+id/time1"
+        app:layout_widthPercent="30%"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="7%"
+        android:layout_below="@+id/height1"
+        />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/time1"
+        android:id="@+id/time2"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="8%"
+        android:textSize="18dp"
+        android:hint="time"
+        android:gravity="center"
+        android:background="@drawable/editborder"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="10%"
+        android:layout_below="@+id/height"
+        />
+
+
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_marginTopPercent="15%"
+        android:layout_below="@+id/time1"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonborder"
+        android:id="@+id/calcult"
+        android:textSize="18dp"
+
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="55%"
+        />
+
+
+
+
+</android.support.percent.PercentRelativeLayout>

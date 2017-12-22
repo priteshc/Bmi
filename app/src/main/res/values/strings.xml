@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="custom_speedometer">Custom Speedometer!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_speedometer">Speedometer</string>
+    <string name="move_needle">Change Needle Value</string>
+
+</resources>

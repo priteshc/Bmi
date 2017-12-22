@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmiback"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/border"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Mass Index"
+            android:layout_gravity="center"
+            android:textSize="23dp"
+            android:id="@+id/toolbar_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please insert your body-data"
+        android:textSize="20dp"
+        android:id="@+id/reg"
+        android:layout_below="@+id/toolbar"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="3%"
+
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Weight:"
+        android:textSize="20dp"
+        android:id="@+id/name"
+        app:layout_widthPercent="30%"
+        app:layout_marginTopPercent="20%"
+        app:layout_marginLeftPercent="7%"
+        android:layout_below="@+id/reg"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="45%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="45%"
+        app:layout_heightPercent="10%"
+        android:gravity="center"
+        android:layout_below="@+id/reg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/kg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radiobuttonselector"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="kg/cm"
+            android:textColor="@drawable/textcolorselector" />
+
+        <RadioButton
+            android:id="@+id/pound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radiobuttonselector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:checked="false"
+            android:clickable="true"
+            android:text="lb/ft"
+            android:textColor="@drawable/textcolorselector" />
+
+           </RadioGroup>
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/weight"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="8%"
+        android:textSize="18dp"
+        android:hint="weight"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_marginTopPercent="7%"
+        android:background="@drawable/editborder"
+        app:layout_marginLeftPercent="10%"
+        android:layout_below="@+id/radioGroup1"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="kgs"
+        android:textSize="20dp"
+        android:id="@+id/label"
+        app:layout_widthPercent="20%"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="1%"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_toRightOf="@+id/weight"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Height:"
+        android:textSize="20dp"
+        android:id="@+id/height1"
+        app:layout_widthPercent="30%"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="7%"
+        android:layout_below="@+id/weight"
+        />
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="45%"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="3%"
+        app:layout_heightPercent="10%"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/height1"
+        android:layout_below="@+id/weight"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/cm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radiobuttonselector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="In cms"
+            android:textColor="@drawable/textcolorselector" />
+
+        <RadioButton
+            android:id="@+id/inch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radiobuttonselector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="In inches"
+            android:textColor="@drawable/textcolorselector" />
+
+    </RadioGroup>
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/height"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="8%"
+        android:textSize="18dp"
+        android:hint="height"
+        android:gravity="center"
+        android:background="@drawable/editborder"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="10%"
+        android:layout_below="@+id/weight"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="cm"
+        android:textSize="20dp"
+        android:id="@+id/label1"
+        app:layout_widthPercent="20%"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="1%"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_toRightOf="@+id/height"
+        />
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_marginTopPercent="15%"
+        android:layout_below="@+id/height"
+        android:text="Save and Continue"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonborder"
+        android:id="@+id/calcult"
+        android:textSize="18dp"
+
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="55%"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BMI:"
+        android:textSize="20dp"
+        android:id="@+id/bmi1"
+        app:layout_widthPercent="30%"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="3%"
+        android:layout_below="@+id/calcult"
+        android:visibility="gone"
+        />
+
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/bmi"
+        app:layout_widthPercent="45%"
+        android:textSize="18dp"
+        android:hint="bmi"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:enabled="false"
+        android:inputType="number"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="2%"
+        android:layout_below="@+id/calcult"
+        android:visibility="visible"
+        />
+
+
+</android.support.percent.PercentRelativeLayout>
